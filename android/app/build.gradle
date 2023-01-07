@@ -1,4 +1,6 @@
 apply plugin: "com.android.application"
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
 
 import com.android.build.OutputFile
 import org.apache.tools.ant.taskdefs.condition.Os
@@ -135,7 +137,7 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
-        applicationId "com.clipshareapp"
+        applicationId "com.clipshare.app"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -220,6 +222,7 @@ android {
     }
     buildTypes {
         debug {
+            applicationIdSuffix ".local"
             signingConfig signingConfigs.debug
         }
         release {
