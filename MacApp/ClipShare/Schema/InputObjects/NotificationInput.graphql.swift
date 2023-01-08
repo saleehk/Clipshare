@@ -16,14 +16,16 @@ public extension ClipShareGQLDB {
       title: String,
       body: String,
       action: String,
-      params: String
+      params: String,
+      isSilent: GraphQLNullable<Bool> = nil
     ) {
       __data = InputDict([
         "deviceId": deviceId,
         "title": title,
         "body": body,
         "action": action,
-        "params": params
+        "params": params,
+        "isSilent": isSilent
       ])
     }
 
@@ -50,6 +52,11 @@ public extension ClipShareGQLDB {
     public var params: String {
       get { __data["params"] }
       set { __data["params"] = newValue }
+    }
+
+    public var isSilent: GraphQLNullable<Bool> {
+      get { __data["isSilent"] }
+      set { __data["isSilent"] = newValue }
     }
   }
 

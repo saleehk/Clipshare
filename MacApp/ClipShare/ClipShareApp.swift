@@ -74,23 +74,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
            }
        }
 
-       @objc func didTapOne() {
+       @objc func sendToDevice() {
                               let pasteboard = NSPasteboard.general
                               if let clipboardString = pasteboard.string(forType: .string) {
-                                  sendToPhone(clipboard: clipboardString)
+                                  sendToPhone(clipboard: clipboardString, isSilent:false)
                               }
        }
 
-       @objc func didTapTwo() {
-           changeStatusBarButton(number: 2)
-       }
-
-       @objc func didTapThree() {
-           changeStatusBarButton(number: 3)
-       }
     func setupMenus() {
             let menu = NSMenu()
-            let one = NSMenuItem(title: "Send to phone", action: #selector(didTapOne) , keyEquivalent: "1")
+            let one = NSMenuItem(title: "Send to phone", action: #selector(sendToDevice) , keyEquivalent: "1")
             menu.addItem(one)
             menu.addItem(NSMenuItem(title: "Quit", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
             statusItem.menu = menu

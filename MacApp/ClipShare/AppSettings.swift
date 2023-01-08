@@ -70,10 +70,10 @@ func getJSONParams(text:String!)->String{
     return jsonString
 }
 
-func sendToPhone(clipboard:String)
+func sendToPhone(clipboard:String,isSilent:GraphQLNullable<Bool> = true)
 {
     if(getDeviceId() != nil){
-        let data = ClipShareGQLDB.NotificationInput(deviceId:getDeviceId()!,title:"From Mac",body: "Body server",action: "COPY_TEXT",params: getJSONParams(text: clipboard))
+        let data = ClipShareGQLDB.NotificationInput(deviceId:getDeviceId()!, title:"From Mac",body: "Body server",action: "COPY_TEXT",params: getJSONParams(text: clipboard),isSilent: isSilent)
         
         apollo.perform(mutation: ClipShareGQLDB.SendToDeviceMutation(data: data)){
             result in

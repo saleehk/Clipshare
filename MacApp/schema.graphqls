@@ -25,6 +25,7 @@ input NotificationInput {
   body: String!
   action: String!
   params: String!
+  isSilent: Boolean
 }
 
 type Notification {
