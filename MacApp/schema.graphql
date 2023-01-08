@@ -1,0 +1,23 @@
+mutation registerDevice($data:DeviceCreateInput!) {
+  createDevice(data:$data){
+    id
+  }
+}
+query getDevices{
+  devices {
+    id
+    name
+  }
+}
+query getDevice($id:String!){
+  device(id:$id){ 
+    id
+    name
+
+  }
+}
+mutation sendToDevice($data:NotificationInput!){
+  sendNotificationToDevice(data:$data){
+    status
+  }
+}

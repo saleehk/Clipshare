@@ -1,0 +1,43 @@
+"""
+A directive used by the Apollo iOS client to annotate operations or fragments that should be used exclusively for generating local cache mutations instead of as standard operations.
+"""
+directive @apollo_client_ios_localCacheMutation on QUERY | MUTATION | SUBSCRIPTION | FRAGMENT_DEFINITION
+
+type Device {
+  id: String!
+  name: String!
+  fcmToken: [String]!
+  type: String!
+}
+
+input DeviceCreateInput {
+  name: String!
+}
+
+input DeviceUpdateFcmInput {
+  deviceId: String!
+  fcmToken: String
+}
+
+input NotificationInput {
+  deviceId: String!
+  title: String!
+  body: String!
+  action: String!
+  params: String!
+}
+
+type Notification {
+  status: String!
+}
+
+type Mutation {
+  createDevice(data: DeviceCreateInput!): Device!
+  setDeviceFcmToken(data: DeviceUpdateFcmInput!): Device!
+  sendNotificationToDevice(data: NotificationInput!): Notification!
+}
+
+type Query {
+  device(id: String!): Device!
+  devices: [Device!]!
+}

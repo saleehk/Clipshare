@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7203DEC0296A94DA0044A18F /* SendToDeviceMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7203DEAF296A94DA0044A18F /* SendToDeviceMutation.graphql.swift */; };
+		7203DEC1296A94DA0044A18F /* RegisterDeviceMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7203DEB0296A94DA0044A18F /* RegisterDeviceMutation.graphql.swift */; };
+		7203DEC2296A94DA0044A18F /* GetDeviceQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7203DEB2296A94DA0044A18F /* GetDeviceQuery.graphql.swift */; };
+		7203DEC3296A94DA0044A18F /* GetDevicesQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7203DEB3296A94DA0044A18F /* GetDevicesQuery.graphql.swift */; };
+		7203DEC4296A94DA0044A18F /* Notification.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7203DEB6296A94DA0044A18F /* Notification.graphql.swift */; };
+		7203DEC5296A94DA0044A18F /* Mutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7203DEB7296A94DA0044A18F /* Mutation.graphql.swift */; };
+		7203DEC6296A94DA0044A18F /* Query.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7203DEB8296A94DA0044A18F /* Query.graphql.swift */; };
+		7203DEC7296A94DA0044A18F /* Device.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7203DEB9296A94DA0044A18F /* Device.graphql.swift */; };
+		7203DEC8296A94DA0044A18F /* SchemaConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7203DEBA296A94DA0044A18F /* SchemaConfiguration.swift */; };
+		7203DEC9296A94DA0044A18F /* NotificationInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7203DEBC296A94DA0044A18F /* NotificationInput.graphql.swift */; };
+		7203DECA296A94DA0044A18F /* DeviceCreateInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7203DEBD296A94DA0044A18F /* DeviceCreateInput.graphql.swift */; };
+		7203DECB296A94DA0044A18F /* SchemaMetadata.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7203DEBE296A94DA0044A18F /* SchemaMetadata.graphql.swift */; };
+		7203DECC296A94DA0044A18F /* ClipShareGQLDB.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7203DEBF296A94DA0044A18F /* ClipShareGQLDB.graphql.swift */; };
+		729B06D329692796006C4639 /* ClipShareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B06D229692796006C4639 /* ClipShareApp.swift */; };
+		729B06D529692796006C4639 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B06D429692796006C4639 /* ContentView.swift */; };
+		729B06D729692798006C4639 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 729B06D629692798006C4639 /* Assets.xcassets */; };
+		729B06DA29692798006C4639 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 729B06D929692798006C4639 /* Preview Assets.xcassets */; };
+		729B06E529692798006C4639 /* ClipShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B06E429692798006C4639 /* ClipShareTests.swift */; };
+		729B06EF29692798006C4639 /* ClipShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B06EE29692798006C4639 /* ClipShareUITests.swift */; };
+		729B06F129692798006C4639 /* ClipShareUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729B06F029692798006C4639 /* ClipShareUITestsLaunchTests.swift */; };
+		72F01D7F29698F9D00558243 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 72F01D7E29698F9D00558243 /* Apollo */; };
+		72F01DD52969DB2B00558243 /* EFQRCode in Frameworks */ = {isa = PBXBuildFile; productRef = 72F01DD42969DB2B00558243 /* EFQRCode */; };
+		72F01DD82969DD3A00558243 /* QRCode in Frameworks */ = {isa = PBXBuildFile; productRef = 72F01DD72969DD3A00558243 /* QRCode */; };
+		72F01DDA2969DED300558243 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F01DD92969DED300558243 /* AppSettings.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		729B06E129692798006C4639 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 729B06C729692796006C4639 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 729B06CE29692796006C4639;
+			remoteInfo = ClipShare;
+		};
+		729B06EB29692798006C4639 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 729B06C729692796006C4639 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 729B06CE29692796006C4639;
+			remoteInfo = ClipShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7203DEAF296A94DA0044A18F /* SendToDeviceMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendToDeviceMutation.graphql.swift; sourceTree = "<group>"; };
+		7203DEB0296A94DA0044A18F /* RegisterDeviceMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterDeviceMutation.graphql.swift; sourceTree = "<group>"; };
+		7203DEB2296A94DA0044A18F /* GetDeviceQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetDeviceQuery.graphql.swift; sourceTree = "<group>"; };
+		7203DEB3296A94DA0044A18F /* GetDevicesQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetDevicesQuery.graphql.swift; sourceTree = "<group>"; };
+		7203DEB6296A94DA0044A18F /* Notification.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.graphql.swift; sourceTree = "<group>"; };
+		7203DEB7296A94DA0044A18F /* Mutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mutation.graphql.swift; sourceTree = "<group>"; };
+		7203DEB8296A94DA0044A18F /* Query.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.graphql.swift; sourceTree = "<group>"; };
+		7203DEB9296A94DA0044A18F /* Device.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.graphql.swift; sourceTree = "<group>"; };
+		7203DEBA296A94DA0044A18F /* SchemaConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaConfiguration.swift; sourceTree = "<group>"; };
+		7203DEBC296A94DA0044A18F /* NotificationInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationInput.graphql.swift; sourceTree = "<group>"; };
+		7203DEBD296A94DA0044A18F /* DeviceCreateInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceCreateInput.graphql.swift; sourceTree = "<group>"; };
+		7203DEBE296A94DA0044A18F /* SchemaMetadata.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaMetadata.graphql.swift; sourceTree = "<group>"; };
+		7203DEBF296A94DA0044A18F /* ClipShareGQLDB.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClipShareGQLDB.graphql.swift; sourceTree = "<group>"; };
+		729B06CF29692796006C4639 /* ClipShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClipShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		729B06D229692796006C4639 /* ClipShareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipShareApp.swift; sourceTree = "<group>"; };
+		729B06D429692796006C4639 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		729B06D629692798006C4639 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		729B06D929692798006C4639 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		729B06DB29692798006C4639 /* ClipShare.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClipShare.entitlements; sourceTree = "<group>"; };
+		729B06E029692798006C4639 /* ClipShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		729B06E429692798006C4639 /* ClipShareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipShareTests.swift; sourceTree = "<group>"; };
+		729B06EA29692798006C4639 /* ClipShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		729B06EE29692798006C4639 /* ClipShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipShareUITests.swift; sourceTree = "<group>"; };
+		729B06F029692798006C4639 /* ClipShareUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipShareUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		72F01DD92969DED300558243 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		729B06CC29692796006C4639 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72F01D7F29698F9D00558243 /* Apollo in Frameworks */,
+				72F01DD52969DB2B00558243 /* EFQRCode in Frameworks */,
+				72F01DD82969DD3A00558243 /* QRCode in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		729B06DD29692798006C4639 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		729B06E729692798006C4639 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7203DEAD296A94DA0044A18F /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				7203DEAE296A94DA0044A18F /* Mutations */,
+				7203DEB1296A94DA0044A18F /* Queries */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		7203DEAE296A94DA0044A18F /* Mutations */ = {
+			isa = PBXGroup;
+			children = (
+				7203DEAF296A94DA0044A18F /* SendToDeviceMutation.graphql.swift */,
+				7203DEB0296A94DA0044A18F /* RegisterDeviceMutation.graphql.swift */,
+			);
+			path = Mutations;
+			sourceTree = "<group>";
+		};
+		7203DEB1296A94DA0044A18F /* Queries */ = {
+			isa = PBXGroup;
+			children = (
+				7203DEB2296A94DA0044A18F /* GetDeviceQuery.graphql.swift */,
+				7203DEB3296A94DA0044A18F /* GetDevicesQuery.graphql.swift */,
+			);
+			path = Queries;
+			sourceTree = "<group>";
+		};
+		7203DEB4296A94DA0044A18F /* Schema */ = {
+			isa = PBXGroup;
+			children = (
+				7203DEB5296A94DA0044A18F /* Objects */,
+				7203DEBA296A94DA0044A18F /* SchemaConfiguration.swift */,
+				7203DEBB296A94DA0044A18F /* InputObjects */,
+				7203DEBE296A94DA0044A18F /* SchemaMetadata.graphql.swift */,
+			);
+			path = Schema;
+			sourceTree = "<group>";
+		};
+		7203DEB5296A94DA0044A18F /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				7203DEB6296A94DA0044A18F /* Notification.graphql.swift */,
+				7203DEB7296A94DA0044A18F /* Mutation.graphql.swift */,
+				7203DEB8296A94DA0044A18F /* Query.graphql.swift */,
+				7203DEB9296A94DA0044A18F /* Device.graphql.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		7203DEBB296A94DA0044A18F /* InputObjects */ = {
+			isa = PBXGroup;
+			children = (
+				7203DEBC296A94DA0044A18F /* NotificationInput.graphql.swift */,
+				7203DEBD296A94DA0044A18F /* DeviceCreateInput.graphql.swift */,
+			);
+			path = InputObjects;
+			sourceTree = "<group>";
+		};
+		729B06C629692796006C4639 = {
+			isa = PBXGroup;
+			children = (
+				729B06D129692796006C4639 /* ClipShare */,
+				729B06E329692798006C4639 /* ClipShareTests */,
+				729B06ED29692798006C4639 /* ClipShareUITests */,
+				729B06D029692796006C4639 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		729B06D029692796006C4639 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				729B06CF29692796006C4639 /* ClipShare.app */,
+				729B06E029692798006C4639 /* ClipShareTests.xctest */,
+				729B06EA29692798006C4639 /* ClipShareUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		729B06D129692796006C4639 /* ClipShare */ = {
+			isa = PBXGroup;
+			children = (
+				7203DEBF296A94DA0044A18F /* ClipShareGQLDB.graphql.swift */,
+				7203DEAD296A94DA0044A18F /* Operations */,
+				7203DEB4296A94DA0044A18F /* Schema */,
+				729B06D229692796006C4639 /* ClipShareApp.swift */,
+				729B06D429692796006C4639 /* ContentView.swift */,
+				729B06D629692798006C4639 /* Assets.xcassets */,
+				729B06DB29692798006C4639 /* ClipShare.entitlements */,
+				729B06D829692798006C4639 /* Preview Content */,
+				72F01DD92969DED300558243 /* AppSettings.swift */,
+			);
+			path = ClipShare;
+			sourceTree = "<group>";
+		};
+		729B06D829692798006C4639 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				729B06D929692798006C4639 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		729B06E329692798006C4639 /* ClipShareTests */ = {
+			isa = PBXGroup;
+			children = (
+				729B06E429692798006C4639 /* ClipShareTests.swift */,
+			);
+			path = ClipShareTests;
+			sourceTree = "<group>";
+		};
+		729B06ED29692798006C4639 /* ClipShareUITests */ = {
+			isa = PBXGroup;
+			children = (
+				729B06EE29692798006C4639 /* ClipShareUITests.swift */,
+				729B06F029692798006C4639 /* ClipShareUITestsLaunchTests.swift */,
+			);
+			path = ClipShareUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		729B06CE29692796006C4639 /* ClipShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 729B06F429692798006C4639 /* Build configuration list for PBXNativeTarget "ClipShare" */;
+			buildPhases = (
+				729B06CB29692796006C4639 /* Sources */,
+				729B06CC29692796006C4639 /* Frameworks */,
+				729B06CD29692796006C4639 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClipShare;
+			packageProductDependencies = (
+				72F01D7E29698F9D00558243 /* Apollo */,
+				72F01DD42969DB2B00558243 /* EFQRCode */,
+				72F01DD72969DD3A00558243 /* QRCode */,
+			);
+			productName = ClipShare;
+			productReference = 729B06CF29692796006C4639 /* ClipShare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		729B06DF29692798006C4639 /* ClipShareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 729B06F729692798006C4639 /* Build configuration list for PBXNativeTarget "ClipShareTests" */;
+			buildPhases = (
+				729B06DC29692798006C4639 /* Sources */,
+				729B06DD29692798006C4639 /* Frameworks */,
+				729B06DE29692798006C4639 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				729B06E229692798006C4639 /* PBXTargetDependency */,
+			);
+			name = ClipShareTests;
+			productName = ClipShareTests;
+			productReference = 729B06E029692798006C4639 /* ClipShareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		729B06E929692798006C4639 /* ClipShareUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 729B06FA29692798006C4639 /* Build configuration list for PBXNativeTarget "ClipShareUITests" */;
+			buildPhases = (
+				729B06E629692798006C4639 /* Sources */,
+				729B06E729692798006C4639 /* Frameworks */,
+				729B06E829692798006C4639 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				729B06EC29692798006C4639 /* PBXTargetDependency */,
+			);
+			name = ClipShareUITests;
+			productName = ClipShareUITests;
+			productReference = 729B06EA29692798006C4639 /* ClipShareUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		729B06C729692796006C4639 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					729B06CE29692796006C4639 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					729B06DF29692798006C4639 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 729B06CE29692796006C4639;
+					};
+					729B06E929692798006C4639 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 729B06CE29692796006C4639;
+					};
+				};
+			};
+			buildConfigurationList = 729B06CA29692796006C4639 /* Build configuration list for PBXProject "ClipShare" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 729B06C629692796006C4639;
+			packageReferences = (
+				72F01D7D29698F9D00558243 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				72F01DD32969DB2B00558243 /* XCRemoteSwiftPackageReference "EFQRCode" */,
+				72F01DD62969DD3A00558243 /* XCRemoteSwiftPackageReference "QRCode" */,
+			);
+			productRefGroup = 729B06D029692796006C4639 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				729B06CE29692796006C4639 /* ClipShare */,
+				729B06DF29692798006C4639 /* ClipShareTests */,
+				729B06E929692798006C4639 /* ClipShareUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		729B06CD29692796006C4639 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				729B06DA29692798006C4639 /* Preview Assets.xcassets in Resources */,
+				729B06D729692798006C4639 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		729B06DE29692798006C4639 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		729B06E829692798006C4639 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		729B06CB29692796006C4639 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7203DEC2296A94DA0044A18F /* GetDeviceQuery.graphql.swift in Sources */,
+				7203DEC4296A94DA0044A18F /* Notification.graphql.swift in Sources */,
+				7203DEC5296A94DA0044A18F /* Mutation.graphql.swift in Sources */,
+				7203DECA296A94DA0044A18F /* DeviceCreateInput.graphql.swift in Sources */,
+				7203DEC0296A94DA0044A18F /* SendToDeviceMutation.graphql.swift in Sources */,
+				729B06D529692796006C4639 /* ContentView.swift in Sources */,
+				7203DEC8296A94DA0044A18F /* SchemaConfiguration.swift in Sources */,
+				7203DEC3296A94DA0044A18F /* GetDevicesQuery.graphql.swift in Sources */,
+				72F01DDA2969DED300558243 /* AppSettings.swift in Sources */,
+				7203DECC296A94DA0044A18F /* ClipShareGQLDB.graphql.swift in Sources */,
+				7203DEC7296A94DA0044A18F /* Device.graphql.swift in Sources */,
+				7203DEC6296A94DA0044A18F /* Query.graphql.swift in Sources */,
+				7203DEC9296A94DA0044A18F /* NotificationInput.graphql.swift in Sources */,
+				7203DEC1296A94DA0044A18F /* RegisterDeviceMutation.graphql.swift in Sources */,
+				7203DECB296A94DA0044A18F /* SchemaMetadata.graphql.swift in Sources */,
+				729B06D329692796006C4639 /* ClipShareApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		729B06DC29692798006C4639 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				729B06E529692798006C4639 /* ClipShareTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		729B06E629692798006C4639 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				729B06F129692798006C4639 /* ClipShareUITestsLaunchTests.swift in Sources */,
+				729B06EF29692798006C4639 /* ClipShareUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		729B06E229692798006C4639 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 729B06CE29692796006C4639 /* ClipShare */;
+			targetProxy = 729B06E129692798006C4639 /* PBXContainerItemProxy */;
+		};
+		729B06EC29692798006C4639 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 729B06CE29692796006C4639 /* ClipShare */;
+			targetProxy = 729B06EB29692798006C4639 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		729B06F229692798006C4639 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		729B06F329692798006C4639 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		729B06F529692798006C4639 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ClipShare/ClipShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ClipShare/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = saleeh.ClipShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		729B06F629692798006C4639 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ClipShare/ClipShare.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ClipShare/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = saleeh.ClipShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		729B06F829692798006C4639 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = saleeh.ClipShareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClipShare.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ClipShare";
+			};
+			name = Debug;
+		};
+		729B06F929692798006C4639 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = saleeh.ClipShareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClipShare.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ClipShare";
+			};
+			name = Release;
+		};
+		729B06FB29692798006C4639 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = saleeh.ClipShareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ClipShare;
+			};
+			name = Debug;
+		};
+		729B06FC29692798006C4639 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = saleeh.ClipShareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ClipShare;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		729B06CA29692796006C4639 /* Build configuration list for PBXProject "ClipShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				729B06F229692798006C4639 /* Debug */,
+				729B06F329692798006C4639 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		729B06F429692798006C4639 /* Build configuration list for PBXNativeTarget "ClipShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				729B06F529692798006C4639 /* Debug */,
+				729B06F629692798006C4639 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		729B06F729692798006C4639 /* Build configuration list for PBXNativeTarget "ClipShareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				729B06F829692798006C4639 /* Debug */,
+				729B06F929692798006C4639 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		729B06FA29692798006C4639 /* Build configuration list for PBXNativeTarget "ClipShareUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				729B06FB29692798006C4639 /* Debug */,
+				729B06FC29692798006C4639 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		72F01D7D29698F9D00558243 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		72F01DD32969DB2B00558243 /* XCRemoteSwiftPackageReference "EFQRCode" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/EFPrefix/EFQRCode.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+		72F01DD62969DD3A00558243 /* XCRemoteSwiftPackageReference "QRCode" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dagronf/QRCode.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		72F01D7E29698F9D00558243 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72F01D7D29698F9D00558243 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		72F01DD42969DB2B00558243 /* EFQRCode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72F01DD32969DB2B00558243 /* XCRemoteSwiftPackageReference "EFQRCode" */;
+			productName = EFQRCode;
+		};
+		72F01DD72969DD3A00558243 /* QRCode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72F01DD62969DD3A00558243 /* XCRemoteSwiftPackageReference "QRCode" */;
+			productName = QRCode;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 729B06C729692796006C4639 /* Project object */;
+}

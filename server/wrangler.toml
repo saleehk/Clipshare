@@ -1,0 +1,10 @@
+name = "copy-link"
+main = "src/index.js"
+webpack_config = "webpack.config.js"
+compatibility_date = "2021-10-03"
+node_compat = true
+kv_namespaces = [
+ { binding = "COPY_CLIP_KV", id = "c1dfa29d973c428d8d0c638e12c765ef",preview_id = "c1dfa29d973c428d8d0c638e12c765ef" }
+]
+# [build]
+# command = "npm install && npm run build"
