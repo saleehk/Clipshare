@@ -1,0 +1,2 @@
+## Clipshare
+Clipshare is an app that allows you to easily share your Mac's clipboard with your Android device. With Clipshare, you can quickly and easily transfer text, making it easier than ever to stay connected and work efficiently on the go.
