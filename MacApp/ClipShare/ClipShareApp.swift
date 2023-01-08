@@ -32,9 +32,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     private var statusItem: NSStatusItem!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        checkRegisterStatus()
-        
-        // 2
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         // 3
         if let button = statusItem.button {

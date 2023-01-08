@@ -72,14 +72,15 @@ func getJSONParams(text:String!)->String{
 
 func sendToPhone(clipboard:String)
 {
-    
-    let data = ClipShareGQLDB.NotificationInput(deviceId:getDeviceId()!,title:"From Mac",body: "Body server",action: "COPY_TEXT",params: getJSONParams(text: clipboard))
-    
-    apollo.perform(mutation: ClipShareGQLDB.SendToDeviceMutation(data: data)){
-        result in
-      guard let data = try? result.get().data else { return }
-        print(data)
-//        let _deviceId = data.createDevice.id
-//        saveDeviceId(deviceId: _deviceId)
+    if(getDeviceId() != nil){
+        let data = ClipShareGQLDB.NotificationInput(deviceId:getDeviceId()!,title:"From Mac",body: "Body server",action: "COPY_TEXT",params: getJSONParams(text: clipboard))
+        
+        apollo.perform(mutation: ClipShareGQLDB.SendToDeviceMutation(data: data)){
+            result in
+            guard let data = try? result.get().data else { return }
+            print(data)
+            //        let _deviceId = data.createDevice.id
+            //        saveDeviceId(deviceId: _deviceId)
+        }
     }
 }

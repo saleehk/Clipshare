@@ -69,24 +69,33 @@ func getJSONforQR(deviceId:String!)->String{
 }
 
 struct ContentView: View {
-    @State private var isConnected: Bool = false
+    @State private var connecting: Bool = false
+    @AppStorage(DefaultsKeys.deviceID) var deviceId: String = ""
+
 
     var body: some View {
         VStack {
-         let deviceId = getDeviceId();
-          if(deviceId != nil)
+          let isConnected = deviceId != "";
+          if(isConnected)
             {
               let jsonString = getJSONforQR(deviceId:deviceId);
               QRCodeViewUI(
                 content:jsonString
               )
-//              Text(jsonString)
-          }else{
-              Text("Not connected")
+              Text("Scan this QR code to connect to your device")
               Button(!isConnected ? "Connect" : "Disconnect") {
-//                  isConnected.toggle()
-                  regiserDevice()
+                  deviceId = "";
               }
+          } else {
+              Text("Not connected Please wait ..." )
+              if(connecting)
+               {
+                   ProgressView()
+               }else{
+              Button("Connect") {
+                  connecting = true
+                  regiserDevice()
+              }}
           }
         }
         .padding()
