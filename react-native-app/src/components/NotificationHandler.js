@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import messaging from '@react-native-firebase/messaging';
-import { handleMessage } from '../lib/actions';
+import { handleMessage, handleNotificationClick } from '../lib/actions';
 messaging().setBackgroundMessageHandler(async remoteMessage => {
   console.log(
     'Message handled in the background!',
@@ -17,7 +17,16 @@ export default function NotificationHandler() {
       console.log(handleMessage);
       handleMessage(remoteMessage);
     });
+    messaging().onNotificationOpenedApp(handleNotificationClick);
 
+    // Check whether an initial notification is available
+    messaging()
+      .getInitialNotification()
+      .then(remoteMessage => {
+        if (remoteMessage) {
+          handleNotificationClick(remoteMessage);
+        }
+      });
     return unsubscribe;
   }, []);
 
